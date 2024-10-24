@@ -222,6 +222,7 @@
       border: 2px solid #B7C6E7;
       border-radius: 8px;
       padding: 39px 32px 64px 32px;
+      background-color: #FFFFFF;
       .subtitleInfoWrapper {
         display: flex;
         gap: 16px;
@@ -233,6 +234,50 @@
         }
         .sendInfo:hover {
           opacity: 1;
+        }
+      }
+      .tabs {
+        display: flex;
+        flex-direction: row;
+        margin-top: 35px;
+        &_leftTabBtn {
+          border-top-left-radius: 8px;
+          border-bottom-left-radius: 8px;
+          &__leftTabIconsWrapper {
+            display: flex;
+            gap: 5px;
+            width: 56px;
+            height: 56px;
+            .tabDivider {
+              width: 1px;
+              height: 38px;
+              transform: rotate(15deg);
+              background-color: #B7C6E7;
+            }
+          }
+        }
+        &_rightTabBtn {
+          border-top-right-radius: 8px;
+          border-bottom-right-radius: 8px;
+        }
+        .tabBtn {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          width: 100px;
+          height: 84px;
+          border: 1px solid #B7C6E7;
+          cursor: pointer;
+        }
+        .inactiveTabBtn {
+          background-color: #EFF4FF;
+          color: #666666;
+        }
+        .activeTabBtn {
+          background-color: #FFFFFF;
+          border: 2px solid #2B6BF3;
+          color: #1D253C;
         }
       }
     }

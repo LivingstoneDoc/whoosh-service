@@ -4,6 +4,10 @@ import lock from './assets/icons/header/lock.svg';
 
 import descrPic from './assets/img/order-section/video.png';
 import sendInfo from './assets/icons/order-section/send-info.svg';
+import bicycleIcon from './assets/icons/order-section/bicycle.svg';
+import stickyManIcon from './assets/icons/order-section/sticky-man.svg';
+import carIcon from './assets/icons/order-section/car.svg';
+import truckIcon from './assets/icons/order-section/truck.svg';
 
 function App() {
   return (
@@ -56,6 +60,24 @@ function App() {
             <div className='subtitleInfoWrapper'>
               <div className='orderSubtitle'>Send a Parcel</div>
               <img className='sendInfo' src={sendInfo} alt='send-info'/>
+            </div>
+            <div className='tabs'>
+                <button className='tabs_leftTabBtn tabBtn inactiveTabBtn'>
+                  <div className='tabs_leftTabBtn__leftTabIconsWrapper'>
+                    <img className='tabIcon' src={bicycleIcon} alt='bicycle-icon'/>
+                    <div className='tabDivider'></div>
+                    <img className='tabIcon' src={stickyManIcon} alt='on-foot-icon'/>
+                  </div>
+                  <span className='tabSign'>up to 10lb</span>
+                </button>
+                <button className='tabs_middleTabBtn tabBtn activeTabBtn'>
+                  <img className='tabIcon' src={carIcon} alt='car-icon'/>
+                  <span className='tabSign'>up to 130lb</span>
+                </button>
+                <button className='tabs_rightTabBtn tabBtn inactiveTabBtn'>
+                  <img className='tabIcon' src={truckIcon} alt='truck-icon'/>
+                  <span className='tabSign'>over 130lb</span>
+                </button>
             </div>
           </form>
           <form className='order_rightSide__trackPackage'></form>
