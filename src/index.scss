@@ -182,22 +182,23 @@
       .readMoreBtn:before {
         content: '';
         position: absolute;
-        border: 1px solid #2B6BF3;
-        border-radius: 8px;
         width: 5px;
-        top: 10px;
+        height: 2px;
+        background-color:#2B6BF3;
+        top: 50%;
         right: -15px;
         transform: rotate(45deg);
       }
       .readMoreBtn:after {
         content: '';
         position: absolute;
-        border: 1px solid #2B6BF3;
         width: 5px;
-        top: 13px;
+        height: 2px;
+        background-color:#2B6BF3;
+        // top: 10px;
+        top: 60%;
         right: -15px;
         transform: rotate(-45deg);
-        border-radius: 8px;
       }
     }
     &__serviceVideo {
