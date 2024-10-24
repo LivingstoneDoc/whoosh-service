@@ -65,7 +65,6 @@ function App() {
                 <button className='tabs_leftTabBtn tabBtn inactiveTabBtn'>
                   <div className='tabs_leftTabBtn__leftTabIconsWrapper'>
                     <img className='tabIcon' src={bicycleIcon} alt='bicycle-icon'/>
-                    <div className='tabDivider'></div>
                     <img className='tabIcon' src={stickyManIcon} alt='on-foot-icon'/>
                   </div>
                   <span className='tabSign'>up to 10lb</span>
