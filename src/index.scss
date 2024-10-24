@@ -36,3 +36,38 @@
   font-size: 40px;
   font-weight: 700;
 }
+
+.sectionDescr {
+  margin-top: 29px;
+  font-size: 22px;
+  color: #1D253C;
+  opacity: 0.48;
+  line-height: 30px;
+  text-align: center;
+}
+
+.iconBackground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: #FFFFFF;
+  box-shadow: 0 8px 16px 0 rgba(43, 107, 243, 0.16);
+  margin-left: 8px;
+}
+
+.cardSubtitle {
+  font-size: 22px;
+  color: #1D253C;
+  font-weight: 700;
+}
+
+.cardDescr {
+  margin-top: 36px;
+  font-size: 16px;
+  color: #666666;
+  line-height: 24px;
+}

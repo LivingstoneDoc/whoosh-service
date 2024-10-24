@@ -1,0 +1,45 @@
+.actions {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 640px;
+    background: url('../../assets/img/actions-section/action-bg.png') center center no-repeat;
+    padding: 74px 183px 72px;
+    &_cards {
+      display: flex;
+      gap: 50px;
+      &__card {
+        width: 300px;
+        min-height: 236px;
+        .actionSubtitle {
+          margin-top: 31px;
+          .calculation {
+            font-size: 22px;
+            color: #2B6BF3;
+            margin-left: 8px;
+          }
+        }
+      }
+    }
+    &_btn {
+      margin-top: 36px;
+      width: 296px;
+      height: 48px;
+      border: none;
+      border-radius: 32px;
+      background-color: #FFDD2D;
+      font-size: 18px;
+      color: #1D253C;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    &_btn:active {
+      color: #FFFFFF;
+    }
+    &_cityImg {
+      position: absolute;
+      right: 0;
+      top: -65px;
+    }
+  }

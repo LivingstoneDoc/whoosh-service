@@ -6,18 +6,11 @@
     flex-direction: column;
     align-items: center;
     background-color: #FFFFFF;
-    &_descr {
-      margin-top: 29px;
-      font-size: 22px;
-      color: #666666;
-      line-height: 30px;
-      text-align: center;
-    }
-    &_bilboards {
+    &_cards {
       display: flex;
       margin-top: 39px;
       gap: 50px;
-      &__bilboard {
+      &__card {
         width: 300px;
         min-height: 280px;
         border: 2px solid #B7C6E7;
@@ -26,37 +19,14 @@
         background-color: #F8FAFF;
         cursor: pointer;
         transition: all 0.3s;
-        .advSubtitle {
-          font-size: 22px;
-          color: #1D253C;
-          font-weight: 700;
-        }
         .advIconsWrapper {
           display: flex;
-          .bilboardRouteIcon {
+          .cardRouteIcon {
             margin-top: 32px;
           }
         }
-        .iconBackground {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin-top: 32px;
-          width: 80px;
-          height: 80px;
-          border-radius: 100%;
-          background-color: #FFFFFF;
-          box-shadow: 0 8px 16px 0 rgba(43, 107, 243, 0.16);
-          margin-left: 8px;
-        }
-        .advDescr {
-          margin-top: 36px;
-          font-size: 16px;
-          color: #666666;
-          line-height: 24px;
-        }
       }
-      &__bilboard:hover {
+      &__card:hover {
         background-color: #FFFFFF;
       }
     }

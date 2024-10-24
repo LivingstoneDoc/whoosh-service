@@ -9,27 +9,27 @@ function Advertising() {
     return (
         <section className='advertising'>
       <h2 className='subtitle'>Express delivery market revolution</h2>
-      <p className='advertising_descr'>Express courier service in the city. We are a reliable 
+      <p className='sectionDescr'>Express courier service in the city. We are a reliable 
         logistics partner for delivery services for online stores and restaurants!
       </p>
-      <article className='advertising_bilboards'>
-        <div className='advertising_bilboards__bilboard'>
-          <h3 className='advSubtitle'>Become a Courier</h3>
+      <article className='advertising_cards'>
+        <div className='advertising_cards__card'>
+          <h3 className='cardSubtitle'>Become a Courier</h3>
           <div className='advIconsWrapper'>
-            <div className='iconBackground'><img className='bilboardIcon' src={cycleIcon} alt='cycle'/></div>
-            <img className='bilboardRouteIcon' src={routeIcon} alt='route'/>
+            <div className='iconBackground'><img className='cardIcon' src={cycleIcon} alt='cycle'/></div>
+            <img className='cardRouteIcon' src={routeIcon} alt='route'/>
           </div>
-          <p className='advDescr'>You choose a schedule. You decide how much and when to earn. Earnings from day one</p>
+          <p className='cardDescr'>You choose a schedule. You decide how much and when to earn. Earnings from day one</p>
         </div>
-        <div className='advertising_bilboards__bilboard'>
-          <h3 className='advSubtitle'>Help & Support</h3>
-            <div className='iconBackground'><img className='bilboardIcon' src={supportIcon} alt='cycle'/></div>
-          <p className='advDescr'>You choose a schedule. You decide how much and when to earn. Earnings from day one</p>
+        <div className='advertising_cards__card'>
+          <h3 className='cardSubtitle'>Help & Support</h3>
+            <div className='iconBackground'><img className='cardIcon' src={supportIcon} alt='cycle'/></div>
+          <p className='cardDescr'>You choose a schedule. You decide how much and when to earn. Earnings from day one</p>
         </div>
-        <div className='advertising_bilboards__bilboard'>
-          <h3 className='advSubtitle'>Affiliate Program</h3>
-            <div className='iconBackground'><img className='bilboardIcon' src={advCaseIcon} alt='cycle'/></div>
-          <p className='advDescr'>You choose a schedule. You decide how much and when to earn. Earnings from day one</p>
+        <div className='advertising_cards__card'>
+          <h3 className='cardSubtitle'>Affiliate Program</h3>
+            <div className='iconBackground'><img className='cardIcon' src={advCaseIcon} alt='cycle'/></div>
+          <p className='cardDescr'>You choose a schedule. You decide how much and when to earn. Earnings from day one</p>
         </div>
       </article>
       <img className='dividerIcon' src={boxIcon} alt='box-icon'/>
