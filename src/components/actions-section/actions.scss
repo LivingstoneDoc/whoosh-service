@@ -18,6 +18,13 @@
             font-size: 22px;
             color: #2B6BF3;
             margin-left: 8px;
+            transition: all 0.3s;
+          }
+          .calculation:hover {
+            text-decoration: none;
+          }
+          .calculation:active {
+            text-decoration: underline;
           }
         }
       }
@@ -34,8 +41,11 @@
       cursor: pointer;
       transition: all 0.3s;
     }
-    &_btn:active {
+    &_btn:hover {
       color: #FFFFFF;
+    }
+    &_btn:active {
+      border: 2px solid #FFDD2D;
     }
     &_cityImg {
       position: absolute;

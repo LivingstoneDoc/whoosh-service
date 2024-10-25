@@ -41,6 +41,9 @@
         .readMoreBtn:hover {
           margin-left: 3px;
         }
+        .readMoreBtn:active {
+          text-decoration: underline;
+        }
         .readMoreBtn:before {
           content: '';
           position: absolute;
@@ -206,8 +209,11 @@
           cursor: pointer;
           transition: all 0.3s;
         }
-        .orderBtn:active {
+        .orderBtn:hover {
           background-color: #1252DB;
+        }
+        .orderBtn:active {
+          border: 2px solid #1252DB;
         }
         .clearAllBtn {
           position: relative;
@@ -222,8 +228,11 @@
           cursor: pointer;
           transition: all 0.3s;
         }
-        .clearAllBtn:active {
+        .clearAllBtn:hover {
           text-decoration: underline;
+        }
+        .clearAllBtn:active {
+          text-decoration: none;
         }
         .clearAllBtn:before {
           content: '';

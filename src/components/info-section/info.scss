@@ -12,6 +12,13 @@
         bottom: 10px;
         right: 10px;
         cursor: pointer;
+        transition: all 0.3s;
+    }
+    &_icon:hover {
+        box-shadow: 0 5px 16px 0 #D0DEFD;
+    }
+    &_icon:active {
+        bottom: 8px;
     }
 }
 .info:after {

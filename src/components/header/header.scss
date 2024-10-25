@@ -79,6 +79,10 @@
         border-radius: 100%;
         background-color: #2B6BF3;
         cursor: pointer;
+        transition: all 0.3s;
+      }
+      &__authBtn:active {
+        border: 2px solid #2B6BF3;
       }
     }
     .headerBtn {
@@ -87,6 +91,13 @@
       font-size: 16px;
       background-color: inherit;
       cursor: pointer;
+      transition: all 0.3s;
+    }
+    .headerBtn:hover {
+      text-decoration: underline;
+    }
+    .headerBtn:active {
+      text-decoration: none;
     }
   }
   .header:after {
