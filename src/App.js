@@ -5,6 +5,7 @@ import Partners from './components/partners-section/Partners';
 import Actions from './components/actions-section/Actions';
 import Payment from './components/payment-section/Payment';
 import Info from './components/info-section/Info';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Actions />
       <Payment />
       <Info />
+      <Footer />
     </div>
   );
 }
