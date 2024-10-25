@@ -3,6 +3,7 @@ import Order from './components/order-section/Order';
 import Advertising from './components/advertising-section/Advertising';
 import Partners from './components/partners-section/Partners';
 import Actions from './components/actions-section/Actions';
+import Payment from './components/payment-section/Payment';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Advertising />
       <Partners />
       <Actions />
+      <Payment />
     </div>
   );
 }

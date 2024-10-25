@@ -1,0 +1,34 @@
+.payment {
+    position: relative;
+    min-height: 344px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 98px 103px 96px;
+    &_slider {
+        margin-top: 46px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .arrowBtn {
+            border: none;
+            background-color: #FFFFFF;
+            cursor: pointer;
+        }
+        .arrowLeft {
+            margin-right: -50px;
+        }
+        .arrowRight {
+            margin-left: -50px;
+        }  
+    }
+}
+.payment:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #B7C6E7;
+  }
