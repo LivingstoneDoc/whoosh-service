@@ -57,10 +57,10 @@ function Footer() {
               <br/><br/><span>3rd Floor Chicago, IL 60647</span></a>
           </div>
           <div className='footerSocialLinks'>
-            <div className='linkBackground'><img src={fbIcon} alt='fb-icon'/></div>
-            <div className='linkBackground'><img src={vkIcon} alt='vk-icon'/></div>
-            <div className='linkBackground'><img src={youtubeIcon} alt='youtube-icon'/></div>
-            <div className='linkBackground'><img src={instagramIcon} alt='instagram-icon'/></div>
+            <a className='socialLink' href='https://www.facebook.com' target='_blank'><img src={fbIcon} alt='fb-icon'/></a>
+            <a className='socialLink' href='https://www.vk.com' target='_blank'><img src={vkIcon} alt='vk-icon'/></a>
+            <a className='socialLink' href='https://www.youtube.com' target='_blank'><img src={youtubeIcon} alt='youtube-icon'/></a>
+            <a className='socialLink' href='https://www.instagram.com' target='_blank'><img src={instagramIcon} alt='instagram-icon'/></a>
           </div>
         </div>
       </div>

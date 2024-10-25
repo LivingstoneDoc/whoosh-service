@@ -64,7 +64,7 @@
         display: flex;
         justify-content: space-between;
         margin-top: 58px;
-        .linkBackground {
+        .socialLink {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -73,6 +73,13 @@
           background-color: #2B6BF3;
           border-radius: 100%;
           cursor: pointer;
+          transition: all 0.3s;
+        }
+        .socialLink:hover {
+          box-shadow: 0 8px 20px 0 rgba(43, 107, 243, 0.4);
+        }
+        .socialLink:active {
+          border: 2px solid #2B6BF3;
         }
       }
     }
