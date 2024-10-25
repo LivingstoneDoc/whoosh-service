@@ -37,10 +37,14 @@
         border: 1px solid #B7C6E7;
         color: #1D253C;
         font-size: 14px;
+        transition: all 0.3s;
       }
       &__input:focus {
         outline: none;
         border: 1px solid #2B6BF3;
+      }
+      .inputBtnIcon path {
+        transition: all 0.3s;
       }
       &__input:focus + &__btn .inputBtnIcon path {
         color: #2B6BF3;
