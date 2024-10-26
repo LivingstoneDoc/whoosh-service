@@ -16,6 +16,24 @@ function Order() {
   const tabBtnClick = (buttonId) => {
     setActiveBtn(buttonId);
   }
+
+  const [formData, setFormData] = useState({
+    pickupLocation: '',
+    dropLocation: '',
+  });
+
+  const changeForm = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const submitForm = (e) => {
+    e.preventDefault();
+    console.log(formData);
+  };
+
+  const resetForm = () => {
+    setFormData({ pickupLocation: '', dropLocation: '' });
+  };
     return (
         <section className='order'>
         <div className='order_leftSide'>
@@ -33,7 +51,7 @@ function Order() {
           </article>
         </div>
         <div className='order_rightSide'>
-          <form className='order_rightSide__sendParcel'>
+          <form className='order_rightSide__sendParcel' onSubmit={submitForm}>
             <div className='subtitleInfoWrapper'>
               <div className='orderSubtitle'>Send a Parcel</div>
               <img className='sendInfo' src={sendInfo} alt='send-info'/>
@@ -63,7 +81,8 @@ function Order() {
                 <img className='inputIcon' src={pickupLocationIcon} alt='pickup-icon'/>
                 <div className='labelAndInput'>
                   <label className='label'>Pickup location</label>
-                  <input className='input' type='text' placeholder='location'/>
+                  <input className='input' type='text' placeholder='location' required 
+                    name="pickupLocation" value={formData.pickupLocation} onChange={changeForm}/>
                 </div>
               </div>
               <img className='routeIcon' src={routeDotsIcon} alt='route-icon'/>
@@ -71,12 +90,13 @@ function Order() {
                 <img className='inputIcon' src={dropLocationIcon} alt='drop-icon'/>
                 <div className='labelAndInput'>
                   <label className='label'>Drop location</label>
-                  <input className='input' type='text' placeholder='location'/>
+                  <input className='input' type='text' placeholder='location' required 
+                    name="dropLocation" value={formData.dropLocation} onChange={changeForm}/>
                 </div>
               </div>
             </div>
-            <button className='orderBtn'>Order</button>
-            <button className='clearAllBtn'>Clear All</button>
+            <button type='submit' className='orderBtn'>Order</button>
+            <button type='button' className='clearAllBtn' onClick={resetForm}>Clear All</button>
           </form>
           <form className='order_rightSide__trackPackage'>
             <div className='orderSubtitle'>Track a package</div>
