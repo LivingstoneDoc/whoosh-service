@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import descrPic from '../../assets/img/order-section/video.png';
 import sendInfo from '../../assets/icons/order-section/send-info.svg';
 import bicycleIcon from '../../assets/icons/order-section/bicycle.svg';
@@ -11,6 +12,10 @@ import searchIcon from '../../assets/icons/order-section/search-simple.svg';
 import './order.scss';
 
 function Order() {
+  const [activeBtn, setActiveBtn] = useState(2);
+  const tabBtnClick = (buttonId) => {
+    setActiveBtn(buttonId);
+  }
     return (
         <section className='order'>
         <div className='order_leftSide'>
@@ -34,18 +39,21 @@ function Order() {
               <img className='sendInfo' src={sendInfo} alt='send-info'/>
             </div>
             <div className='tabs'>
-                <button className='tabs_leftTabBtn tabBtn inactiveTabBtn'>
+                <button type='button' className={`tabs_leftTabBtn tabBtn ${activeBtn === 1 ? 'activeTabBtn' : 'inactiveTabBtn'}`} 
+                  onClick={() => tabBtnClick(1)}>
                   <div className='tabs_leftTabBtn__leftTabIconsWrapper'>
                     <img className='tabIcon' src={bicycleIcon} alt='bicycle-icon'/>
                     <img className='tabIcon' src={stickyManIcon} alt='on-foot-icon'/>
                   </div>
                   <span className='tabSign'>up to 10lb</span>
                 </button>
-                <button className='tabs_middleTabBtn tabBtn activeTabBtn'>
+                <button type='button' className={`tabs_middleTabBtn tabBtn ${activeBtn === 2 ? 'activeTabBtn' : 'inactiveTabBtn'}`} 
+                  onClick={() => tabBtnClick(2)}>
                   <img className='tabIcon' src={carIcon} alt='car-icon'/>
                   <span className='tabSign'>up to 130lb</span>
                 </button>
-                <button className='tabs_rightTabBtn tabBtn inactiveTabBtn'>
+                <button type='button' className={`tabs_rightTabBtn tabBtn ${activeBtn === 3 ? 'activeTabBtn' : 'inactiveTabBtn'}`} 
+                  onClick={() => tabBtnClick(3)}>
                   <img className='tabIcon' src={truckIcon} alt='truck-icon'/>
                   <span className='tabSign'>over 130lb</span>
                 </button>
