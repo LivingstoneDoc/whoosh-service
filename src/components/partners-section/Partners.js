@@ -26,23 +26,23 @@ function PartnersSlider() {
   return (
     <Slider {...settings} className='partners_slider'>
         <div className='partners_slider__slide'>
-          {/* <img className='bwImg' src={partnerBwImg1} alt='partner-bw1-icon'/> */}
+          <img className='bwImg' src={partnerBwImg1} alt='partner-bw1-icon'/>
           <img className='coloredImg' src={partnerColoredImg1} alt='partner-colored1-icon'/>
         </div>
         <div className='partners_slider__slide'>
-          {/* <img className='bwImg' src={partnerBwImg5} alt='partner-bw2-icon'/> */}
+          <img className='bwImg' src={partnerBwImg5} alt='partner-bw2-icon'/>
           <img className='coloredImg' src={partnerColoredImg5} alt='partner-colored2-icon'/>
         </div>
         <div className='partners_slider__slide'>
-          {/* <img className='bwImg' src={partnerBwImg2} alt='partner-bw3-icon'/> */}
+          <img className='bwImg' src={partnerBwImg2} alt='partner-bw3-icon'/>
           <img className='coloredImg' src={partnerColoredImg2} alt='partner-colored3-icon'/>
         </div>
         <div className='partners_slider__slide'>
-          {/* <img className='bwImg' src={partnerBwImg4} alt='partner-bw4-icon'/> */}
+          <img className='bwImg' src={partnerBwImg4} alt='partner-bw4-icon'/>
           <img className='coloredImg' src={partnerColoredImg4} alt='partner-colored4-icon'/>
         </div>
         <div className='partners_slider__slide'>
-          {/* <img className='bwImg' src={partnerBwImg3} alt='partner-bw5-icon'/> */}
+          <img className='bwImg' src={partnerBwImg3} alt='partner-bw5-icon'/>
           <img className='coloredImg' src={partnerColoredImg3} alt='partner-colored5-icon'/>
         </div>
     </Slider>

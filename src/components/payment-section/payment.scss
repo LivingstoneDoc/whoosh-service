@@ -23,8 +23,9 @@
             display: flex !important;
             justify-content: center !important;
         }
-        &__slide:active {
-            outline: none !important;
+        &__slide:focus {
+            outline: none;
+            border: none;
         }
     }
     .slick-list {
