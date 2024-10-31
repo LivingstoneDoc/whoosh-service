@@ -27,6 +27,9 @@
             outline: none !important;
         }
     }
+    .slick-list {
+      width: 100%;
+    }
 }
 .payment:before {
     content: '';
@@ -36,7 +39,3 @@
     height: 2px;
     background-color: #B7C6E7;
 }
-
-// .slick-prev:before {
-//     cont
-// }
