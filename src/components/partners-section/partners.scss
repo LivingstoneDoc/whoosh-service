@@ -40,32 +40,30 @@
       text-align: center;
     }
     &_slider {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
+      // display: flex !important;
+      // justify-content: space-around !important;
+      // align-items: center !important;
       width: 100%;
       margin-top: 87px;
-      &__imgWrapper {
-        position: relative;
-        .bwImg, .coloredImg {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          transform: translateX(-50%);
-          transition: opacity 0.3s ease;
-        }
-        .coloredImg {
-          opacity: 0;
-        }
-        img {
-          cursor: pointer;
-        }
+      // height: 100% !important;
+      cursor: pointer;
+      &__slide {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        // position: relative;
       }
-      &__imgWrapper:hover .bwImg {
+      &__slide:active {
+        outline: none;
+      }
+      &__slide:hover .bwImg {
         opacity: 0;
       }
-      &__imgWrapper:hover .coloredImg {
+      &__slide:hover .coloredImg {
         opacity: 1;
       }
+    }
+    .slick-list {
+      height: 100% !important;
     }
 }

@@ -9,19 +9,23 @@
     &_slider {
         margin-top: 46px;
         width: 100%;
-        display: flex;
-        justify-content: space-between;
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        cursor: pointer;
         .arrowBtn {
             border: none;
             background-color: #FFFFFF;
+            padding: 10px;
             cursor: pointer;
         }
-        .arrowLeft {
-            margin-right: -50px;
+        &__slide {
+            display: flex !important;
+            justify-content: center !important;
         }
-        .arrowRight {
-            margin-left: -50px;
-        }  
+        &__slide:active {
+            outline: none !important;
+        }
     }
 }
 .payment:before {
@@ -31,4 +35,8 @@
     width: 100%;
     height: 2px;
     background-color: #B7C6E7;
-  }
+}
+
+// .slick-prev:before {
+//     cont
+// }
