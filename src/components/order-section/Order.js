@@ -61,6 +61,7 @@ function Order() {
                   onClick={() => tabBtnClick(1)}>
                   <div className='tabs_leftTabBtn__leftTabIconsWrapper'>
                     <img className='tabIcon' src={bicycleIcon} alt='bicycle-icon'/>
+                    <div className='iconDivider'></div>
                     <img className='tabIcon' src={stickyManIcon} alt='on-foot-icon'/>
                   </div>
                   <span className='tabSign'>up to 10lb</span>

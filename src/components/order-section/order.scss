@@ -109,22 +109,17 @@
           &_leftTabBtn {
             border-top-left-radius: 8px;
             border-bottom-left-radius: 8px;
+            justify-content: space-evenly;
             &__leftTabIconsWrapper {
-              position: relative;
               display: flex;
-              gap: 15px;
-              width: 56px;
-              height: 56px;
-            }
-            &__leftTabIconsWrapper:after {
-              content: '';
-                position: absolute;
-                top: 10%;
-                left: 70%;
+              align-items: center;
+              gap: 5px;
+              .iconDivider {
                 width: 1px;
                 height: 38px;
                 transform: rotate(15deg);
                 background-color: #B7C6E7;
+              }
             }
           }
           &_rightTabBtn {
