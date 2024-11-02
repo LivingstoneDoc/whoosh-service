@@ -48,6 +48,12 @@ function Order() {
           <article className='order_leftSide__serviceVideo'>
             <div className='orderSubtitle'>How it works</div>
             <img className='descrPic' src={descrPic} alt='descr-pic'/>
+            <div className='serviceVideoDots'>
+              <span className='serviceVideoDot activeDot'></span>
+              <span className='serviceVideoDot inactiveDot'></span>
+              <span className='serviceVideoDot inactiveDot'></span>
+              <span className='serviceVideoDot inactiveDot'></span>
+            </div>
           </article>
         </div>
         <div className='order_rightSide'>
