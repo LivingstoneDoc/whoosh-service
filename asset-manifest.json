@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/whoosh-service/static/css/main.cdbdc9f4.css",
+    "main.css": "/whoosh-service/static/css/main.47495507.css",
     "main.js": "/whoosh-service/static/js/main.53eea7e2.js",
     "static/media/action-bg.png": "/whoosh-service/static/media/action-bg.00c16e80a2f2b4f3affa.png",
     "static/media/video.png": "/whoosh-service/static/media/video.c76afe155ec91172ef99.png",
@@ -49,11 +49,11 @@
     "static/media/pickup-location.svg": "/whoosh-service/static/media/pickup-location.e46f8a986f7b6675337924ed0e75841b.svg",
     "static/media/pin-footer.svg": "/whoosh-service/static/media/pin-footer.8838a59ed255ada0755c2ad9b3f84fd0.svg",
     "static/media/drop-location.svg": "/whoosh-service/static/media/drop-location.f43ab01a80b4403b0667fb76aec5ce2e.svg",
-    "main.cdbdc9f4.css.map": "/whoosh-service/static/css/main.cdbdc9f4.css.map",
+    "main.47495507.css.map": "/whoosh-service/static/css/main.47495507.css.map",
     "main.53eea7e2.js.map": "/whoosh-service/static/js/main.53eea7e2.js.map"
   },
   "entrypoints": [
-    "static/css/main.cdbdc9f4.css",
+    "static/css/main.47495507.css",
     "static/js/main.53eea7e2.js"
   ]
 }
