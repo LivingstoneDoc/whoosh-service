@@ -4,7 +4,7 @@ import lock from '../../assets/icons/header/lock.svg';
 import profile from '../../assets/icons/header/profile.svg';
 import './header.scss';
 
-function Header() {
+function Header(props) {
     return (
         <header className='headerWrapper'>
         <div className='header'>
@@ -37,7 +37,7 @@ function Header() {
         <div className='headerSmallScreen'>
           <div className='profileIconWrapper'><img className='profileIcon' src={profile} alt='profile-icon'/></div>
           <div className='logoIconWrapper'><img className='logoIcon' src={logo} alt='logo'/></div>
-          <div className='menuIcon'>
+          <div className='menuIcon' onClick={props.onClickMenu}>
             <span className='menuIcon_firstLine menuLine'></span>
             <span className='menuIcon_secondLine menuLine'></span>
             <span className='menuIcon_thirdLine menuLine'></span>

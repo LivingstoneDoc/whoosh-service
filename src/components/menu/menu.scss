@@ -1,0 +1,163 @@
+.menuWrapper {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    &_overlay {
+        position: fixed;
+        top: 64px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #F8FAFF;
+        z-index: 1;
+        display: none;
+        transition: all 0.3s;
+    }
+    &_menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 24px 16px 32px;
+        width: 274px;
+        height: 100vh;
+        background-color: #FFFFFF;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        z-index: 2;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        &__header {
+            display: flex;
+            justify-content: space-between;
+            .menuLocationBtn {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border: none;
+                background-color: inherit;
+                width: 138px;
+                height: 24px;
+                font-size: 16px;
+                color: #666666;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            .menuLocationBtn:hover {
+                text-decoration: none;
+            }
+            .menuLocationBtn:active {
+                text-decoration: underline;
+            }
+            .menuCloseBtn {
+                position: relative;
+                width: 24px;
+                height: 24px;
+                cursor: pointer;
+            }
+            .menuCloseBtn:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                width: 19px;
+                height: 3px;
+                border-radius: 8px;
+                background-color: #B7C6E7;
+                transform: rotate(45deg);
+            }
+            .menuCloseBtn:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                width: 19px;
+                height: 3px;
+                border-radius: 8px;
+                background-color: #B7C6E7;
+                transform: rotate(-45deg);
+            }
+        }
+        &__form {
+            position: relative;
+            margin-top: 40px;
+            .menuInput {
+                width: 100%;
+                height: 40px;
+                border: 1px solid #B7C6E7;
+                border-radius: 4px;
+                padding: 0 16px;
+                font-size: 16px;
+                color: #1D253C;
+                transition: all 0.3s;
+            }
+            .menuInput:focus {
+                outline: none;
+                border: 1px solid #2B6BF3;
+            }
+            .menuIcon path {
+                transition: all 0.3s;
+            }
+            .menuInput:focus + .menuInputBtn .menuIcon path {
+            color: #2B6BF3;
+            }
+            .menuInputBtn {
+                position: absolute;
+                right: 16px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 24px;
+                height: 24px;
+                border: none;
+                background-color: inherit;
+                cursor: pointer;
+                .menuIcon {
+                    width: 100%;
+                    height: 100%;
+                    path {
+                        color: #B7C6E7;
+                    }
+                }
+            }
+        }
+        &__list {
+            margin-top: 44px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            list-style: none;
+            .menuListItem {
+                font-size: 16px;
+                color: #666666;
+                cursor: pointer;
+            }
+            .menuListItem:hover {
+                text-decoration: underline;
+            }
+            .menuListItem:active {
+                text-decoration: none;
+            }
+        }
+        &__complexOrderBtn {
+            position: absolute;
+            bottom: 32px;
+            width: 242px;
+            height: 48px;
+            border: none;
+            border-radius: 32px;
+            background-color: #2B6BF3;
+            font-size: 18px;
+            color: #FFFFFF;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        &__complexOrderBtn:hover {
+            background-color: #1252DB;
+          }
+          &__complexOrderBtn:active {
+            border: 2px solid #1252DB;
+          }
+    }
+    .openMenu {
+        transform: translateX(0);
+        display: block;
+    }
+}
