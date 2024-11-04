@@ -21,7 +21,34 @@ function PartnersSlider() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    adaptiveHeight: true
+    adaptiveHeight: true,
+    responsive: [
+      {
+          breakpoint: 1024,
+          settings: {
+              slidesToShow: 4,
+              centerMode: true,
+              centerPadding: '30px',
+              arrows: false
+          },
+      },
+      {
+          breakpoint: 768,
+          settings: {
+              slidesToShow: 3,
+              centerPadding: '20px',
+              arrows: false
+          },
+      },
+      {
+        breakpoint: 540,
+        settings: {
+            slidesToShow: 1,
+            centerPadding: '20px',
+            arrows: false
+        },
+    },
+  ],
   };
   return (
     <Slider {...settings} className='partners_slider'>
@@ -57,28 +84,6 @@ function Partners() {
       <button className='partners_subtitleAndIconWrapper__btn'><img src={partnersCaseIcon} alt='case-icon'/><span>Let's collaborate</span></button>
       </div>
       <PartnersSlider />
-      {/* <div className='partners_slider'>
-        <div className='partners_slider__imgWrapper'>
-          <img className='bwImg' src={partnerBwImg1} alt='partner-bw1-icon'/>
-          <img className='coloredImg' src={partnerColoredImg1} alt='partner-colored1-icon'/>
-        </div>
-        <div className='partners_slider__imgWrapper'>
-          <img className='bwImg' src={partnerBwImg5} alt='partner-bw2-icon'/>
-          <img className='coloredImg' src={partnerColoredImg5} alt='partner-colored2-icon'/>
-        </div>
-        <div className='partners_slider__imgWrapper'>
-          <img className='bwImg' src={partnerBwImg2} alt='partner-bw3-icon'/>
-          <img className='coloredImg' src={partnerColoredImg2} alt='partner-color3-icon'/>
-        </div>
-        <div className='partners_slider__imgWrapper'>
-          <img className='bwImg' src={partnerBwImg4} alt='partner-bw4-icon'/>
-          <img className='coloredImg' src={partnerColoredImg4} alt='partner-color4-icon'/>
-        </div>
-        <div className='partners_slider__imgWrapper'>
-          <img className='bwImg' src={partnerBwImg3} alt='partner-bw5-icon'/>
-          <img className='coloredImg' src={partnerColoredImg3} alt='partner-color5-icon'/>
-        </div>
-      </div> */}
     </section>
     )
 }

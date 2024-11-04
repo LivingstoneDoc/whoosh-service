@@ -6,6 +6,7 @@ import youtubeIcon from '../../assets/icons/footer/youtube.svg';
 import instagramIcon from '../../assets/icons/footer/instagram.svg';
 import companyImg from '../../assets//img/footer/logo-footer.png';
 import policyIcon from '../../assets/icons/footer/policy.svg';
+import companySmallSizeImg from '../../assets/img/footer/footer-smallSize-logo.png';
 import './footer.scss';
 
 function Footer() {
@@ -14,14 +15,16 @@ function Footer() {
       <div className='footer_upperPart'>
         <div className='footer_upperPart__about'>
           <div className='footerSubtitle'>About Whoosh</div>
+          <div className='footerSubtitleAndDescr'>
           <img className='aboutIcon' src={routeIcon} alt='route-icon'/>
           <p className='aboutDescr'>
             Express delivery of documents and parcels for 
             organizations, express delivery of correspondence, 
             purchases and other goods
           </p>
+          </div>
         </div>
-        <div className='footer_upperPart__listWrapper'>
+        <div className='footer_upperPart__listWrapper footerMenu'>
           <div className='footerSubtitle'>Menu</div>
           <div className='footerDivider'></div>
           <ul className='footerList'>
@@ -34,7 +37,7 @@ function Footer() {
             <li className='footerListItem'><a className='footerLink' href='#'>Tariffs</a></li>
           </ul>
         </div>
-        <div className='footer_upperPart__listWrapper'>
+        <div className='footer_upperPart__listWrapper footerServices'>
         <div className='footerSubtitle'>Services</div>
         <div className='footerDivider'></div>
           <ul className='footerList'>
@@ -53,8 +56,10 @@ function Footer() {
           <a className='footerMobileLink' href='tel:+12129345959'>8 800 934 5959</a>
           <div className='addressWrapper'>
             <img className='addressIcon' src={pinFooterIcon} alt='pin-icon'/>
-            <a className='address' href='#'>2545 W. Diversey Ave.
-              <br/><br/><span>3rd Floor Chicago, IL 60647</span></a>
+            <a className='address' href='#'>
+              <span>2545 W. Diversey Ave.</span>
+              <span>3rd Floor Chicago, IL 60647</span>
+            </a>
           </div>
           <div className='footerSocialLinks'>
             <a className='socialLink' href='https://www.facebook.com' target='_blank'><img src={fbIcon} alt='fb-icon'/></a>
@@ -65,7 +70,12 @@ function Footer() {
         </div>
       </div>
       <div className='footer_lowerPart'>
-        <div className='footer_lowerPart__madeTitle'>Made by</div>
+        <div className='footer_lowerPart__made'>
+          <div className='footerLine'></div>
+          <div className='footerMadeTitle'>Made by</div>
+          <div className='footerLine'></div>
+        </div>
+        
         <div className='footer_lowerPart__rights'>
           <div className='rightsText'>© 2022. All rights reserved.</div>
           <img className='rightsImg' src={companyImg} alt='company-img'/>
@@ -75,6 +85,7 @@ function Footer() {
           </div>
         </div>
       </div>
+      <div className='footer_smallSizeLogo'><img src={companySmallSizeImg} alt='company-img'/></div>
     </section>
   )
 }

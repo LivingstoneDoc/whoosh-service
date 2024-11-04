@@ -40,3 +40,9 @@
 .showText {
     max-height: 500px;
 }
+
+@media (max-width: 1024px) {
+    .info {
+        padding: 68px 16px 52px;
+    }
+}

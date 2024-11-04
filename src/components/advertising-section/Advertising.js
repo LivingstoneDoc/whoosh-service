@@ -23,13 +23,13 @@ function Advertising() {
         </div>
         <div className='advertising_cards__card'>
           <h3 className='cardSubtitle'>Help & Support</h3>
-            <div className='iconBackground'><img className='cardIcon' src={supportIcon} alt='cycle'/></div>
-          <p className='cardDescr'>You choose a schedule. You decide how much and when to earn. Earnings from day one</p>
+          <div className='iconBackground'><img className='cardIcon' src={supportIcon} alt='cycle'/></div>
+          <p className='cardDescr'>Door-to-door delivery in 90 minutes or at your convenience</p>
         </div>
         <div className='advertising_cards__card'>
           <h3 className='cardSubtitle'>Affiliate Program</h3>
-            <div className='iconBackground'><img className='cardIcon' src={advCaseIcon} alt='cycle'/></div>
-          <p className='cardDescr'>You choose a schedule. You decide how much and when to earn. Earnings from day one</p>
+          <div className='iconBackground'><img className='cardIcon' src={advCaseIcon} alt='cycle'/></div>
+          <p className='cardDescr'>Use our service and feel new quality of this traditional service!</p>
         </div>
       </article>
       <img className='dividerIcon' src={boxIcon} alt='box-icon'/>

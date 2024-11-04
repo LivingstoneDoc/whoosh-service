@@ -1,7 +1,7 @@
 .advertising {
     position: relative;
     min-height: 648px;
-    padding: 98px 183px 0;
+    padding: 98px 183px 96px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,13 +30,29 @@
         background-color: #FFFFFF;
       }
     }
-  }
+}
   
-  .advertising:before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #B7C6E7;
+.advertising:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #B7C6E7;
+}
+
+@media (max-width: 1024px) {
+  .advertising {
+    padding: 54px 16px 64px;
+    .sectionDescr {
+      font-size: 20px;
+      margin-top: 11px;
+    }
+    &_cards {
+      flex-direction: column;
+      gap: 32px;
+      align-items: center;
+      margin-top: 15px;
+    }
   }
+}

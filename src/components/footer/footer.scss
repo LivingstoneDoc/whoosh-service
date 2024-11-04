@@ -7,20 +7,21 @@
   &_upperPart {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     &__about {
       position: relative;
-      width: 240px;
-      .aboutIcon {
-        position: absolute;
-        top: 45px;
-       left: -60px;
+      .footerSubtitleAndDescr {
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+        margin-top: 32px;
       }
       .aboutDescr {
-        margin-top: 32px;
         font-size: 14px;
         color: #1D253C;
         opacity: 0.64;
         line-height: 24px;
+        width: 240px;
       }
     }
     &__listWrapper {
@@ -48,6 +49,9 @@
         align-items: flex-start;
         gap: 12px;
         .address {
+          display: flex;
+          flex-direction: column;
+          gap: 14px;
           font-size: 14px;
           color: #1D253C;
           opacity: 0.64;
@@ -85,34 +89,48 @@
     }
   }
   &_lowerPart {
-    &__madeTitle {
-      position: relative;
-      margin-top: 35px;
-      text-align: center;
-      font-size: 14px;
-      color: #B7C6E7;
-      background-color: inherit;
+    &__made {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-top: 14px;
+      .footerLine {
+        width: 50%;
+        height: 2px;
+        background-color: #B7C6E7;
+        opacity: 0.72;
+      }
+      .footerMadeTitle {
+        position: relative;
+        text-align: center;
+        font-size: 14px;
+        color: #B7C6E7;
+        background-color: inherit;
+        width: 60px;
+      }
     }
-    &__madeTitle:before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 0;
-      width: 500px;
-      height: 2px;
-      background-color: #B7C6E7;
-      opacity: 0.72;
-    }
-    &__madeTitle:after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      right: 0;
-      width: 500px;
-      height: 2px;
-      background-color: #B7C6E7;
-      opacity: 0.72;
-    }
+    
+    // &__madeTitle:before {
+    //   content: '';
+    //   position: absolute;
+    //   top: 50%;
+    //   left: 0;
+    //   width: 500px;
+    //   height: 2px;
+    //   background-color: #B7C6E7;
+    //   opacity: 0.72;
+    // }
+    // &__madeTitle:after {
+    //   content: '';
+    //   position: absolute;
+    //   top: 50%;
+    //   right: 0;
+    //   width: 500px;
+    //   height: 2px;
+    //   background-color: #B7C6E7;
+    //   opacity: 0.72;
+    // }
     &__rights {
       margin-top: 13px;
       display: flex;
@@ -170,6 +188,101 @@
       .footerLink:active {
         text-decoration: none;
       }
+    }
+  }
+  &_smallSizeLogo {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    padding: 45px 16px 24px;
+  }
+}
+
+@media (min-width: 532px) and (max-width: 731px) {
+  .footer {
+    &_upperPart {
+      .footerServices {
+        margin-top: 20px;
+      }
+      &__contact {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 531px) {
+  .footer {
+    &_upperPart {
+      &__about {
+        .aboutDescr {
+          width: 100%;
+        }
+      }
+      &__listWrapper {
+        margin-top: 32px;
+      }
+      &__contact {
+        margin-top: 42px;
+        width: 100%;
+        .addressWrapper {
+          .address {
+            display: inline-block;
+          }
+        }
+        .footerSocialLinks {
+          margin-top: 26px;
+          justify-content: space-around;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 445px) {
+  .footer {
+    &_upperPart {
+      &__listWrapper {
+        width: 156px;
+      }
+    }
+    &_lowerPart {
+      &__rights {
+        .rightsImg {
+          margin-right: 55px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .footer {
+    &_lowerPart {
+      display: flex;
+      flex-direction: column-reverse;
+      &__made {
+        margin-top: 22px;
+        .footerMadeTitle {
+          width: 75px;
+        }
+      }
+      &__rights {
+        flex-direction: column-reverse;
+        gap: 24px;
+        margin-top: 53px;
+        .rightsImg {
+          display: none;
+        }
+      }
+    }
+    &_smallSizeLogo {
+      display: flex;
+      justify-content: center;
+      margin-top: 21px;
     }
   }
 }

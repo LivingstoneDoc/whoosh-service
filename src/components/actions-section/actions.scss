@@ -4,7 +4,8 @@
     flex-direction: column;
     align-items: center;
     min-height: 640px;
-    background: url('../../assets/img/actions-section/action-bg.png') center center no-repeat;
+    background: url('../../assets/img/actions-section/action-bg.png') top no-repeat;
+    background-size: cover;
     padding: 74px 183px 72px;
     &_cards {
       display: flex;
@@ -51,5 +52,31 @@
       position: absolute;
       right: 0;
       top: -65px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .actions {
+      padding: 54px 16px 48px;
+      .sectionDescr {
+        font-size: 20px;
+      }
+      &_cards {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 31px;
+        &__card {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .cardDescr {
+            text-align: center;
+          }
+        }
+      }
+      &_cityImg {
+        display: none;
+      }
     }
   }

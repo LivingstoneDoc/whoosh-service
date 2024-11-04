@@ -34,7 +34,34 @@ function PaymentSlider() {
         autoplay: true,
         autoplaySpeed: 2000,
         prevArrow: <PrevArrow />,
-        nextArrow: <NextArrow />
+        nextArrow: <NextArrow />,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 5,
+                    centerMode: true,
+                    centerPadding: '30px',
+                    arrows: false
+                },
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    centerPadding: '20px',
+                    arrows: false
+                },
+            },
+            {
+                breakpoint: 360,
+                settings: {
+                    slidesToShow: 1,
+                    centerPadding: '10px',
+                    arrows: true
+                },
+            },
+        ],
     };
     return (
         <Slider {...settings} className='payment_slider'>

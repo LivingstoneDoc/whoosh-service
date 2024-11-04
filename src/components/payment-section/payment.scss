@@ -40,3 +40,13 @@
     height: 2px;
     background-color: #B7C6E7;
 }
+
+@media (max-width: 1024px) {
+    .payment {
+        padding: 54px 16px 48px;
+        min-height: 224px;
+        &_slider {
+            margin-top: 34px;
+        }
+    }
+}
